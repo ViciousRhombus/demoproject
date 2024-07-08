@@ -43,14 +43,14 @@ class _HealthOverviewState extends State<HealthOverview> {
             children: [
               _header(ImagesPath.artistAvatar, name),
               _headerText('Health Overview', '2'),
-
               const Align(
                   alignment: Alignment.centerLeft,
                   child: CustomText(
                       text: 'Your Daily Health Statistics',
                       fontSize: 20,
                       fontWeight: FontWeight.normal,
-                      color: AppConst.greyColor)),const SizedBox(height: 20),
+                      color: AppConst.greyColor)),
+              const SizedBox(height: 20),
               Row(
                 children: [
                   _stepCounter(steps, goal),
@@ -58,7 +58,7 @@ class _HealthOverviewState extends State<HealthOverview> {
                   _statistics()
                 ],
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Row(
                 children: [
                   Expanded(
@@ -70,8 +70,7 @@ class _HealthOverviewState extends State<HealthOverview> {
                           ImagesPath.pizza, MediaQuery.of(context).size.width)),
                 ],
               ),
-              SizedBox(height: 20),
-
+              const SizedBox(height: 20),
               _pulseWeight('78', '64')
             ],
           ),
