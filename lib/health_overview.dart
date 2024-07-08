@@ -458,7 +458,7 @@ class _HealthOverviewState extends State<HealthOverview> {
                     ImagesPath.pulse,
                     width: 20,
                     height: 20,
-                    color: AppConst.purpleColor,
+                    color: AppConst.darkPurpleColor,
                   ),
                   SizedBox(width: TSizes.widthMQ * 0.25),
                   const Text('Weight',
@@ -471,7 +471,7 @@ class _HealthOverviewState extends State<HealthOverview> {
                     ImagesPath.weight,
                     width: 20,
                     height: 20,
-                    color: AppConst.purpleColor,
+                    color: AppConst.darkPurpleColor,
                   )
                 ],
               ),
